@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
+<!-- <meta http-equiv="X-UA-Compatible" content="IE-edge"> -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shopping Website</title>
 <!-- stylesheet -->
@@ -9,6 +10,12 @@
 <link rel="stylesheet" href="./css/lightslider.css">
 <!--fav-icon---------------->
 <link rel="shortcut icon" href="maskedwolfmocks/Online-Shopping-icon.png"/>
+
+<!-- Glidejs -->
+<link 
+       rel="stylesheet" 
+       href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css"
+    />
 <!-- Using FontAwesome for Icons -->
 <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
 </head>
@@ -31,20 +38,21 @@
  <!--menu-bar----------------------------------------->
  <div class="navigation">
      <!--logo------------>
-     <!-- <a href="#" class="logo"><img src="./maskedwolfmocks/5b460533a7744_thumb900.png"></a> -->
+     <a href="./index.html"><img src="./products/android/phone-icon3.png" alt="image" class="logo" id="logo"></a>
      <!--menu-icon------------->
-     <div class="toggle"></div>
+     
      <!--menu----------------->
      <ul class="menu">
-         <li class="shop"><a href="#">IOS</a></li>
-         <li  class="shop"><a href="#" >Android</a></li>
-         <li class="shop"><a href="#">Windows</a>
+         <li class="shop"><a href="./ios.html">IOS</a></li>
+         <li  class="shop"><a href="./android.html" >Android</a></li>
+         <li class="shop"><a href="./windows.html">Windows</a>
              <!--lable---->
              <span class="sale-lable">Sale</span>
          </li>
-         <li class="shop"><a href="#">Smart Gadgets</a></li>
+         <li class="shop"><a href="./smartgadgets.html">Smart Gadgets</a></li>
          <li class="shop"><a href="./aboutus.html">About Us</a></li>
      </ul>
+     
      <!--right-menu----------->
      <div class="search-box">
         <input type="text" placeholder="Type to search..."> 
@@ -62,12 +70,16 @@
          </a>
          <a href="#">
              <i class="fas fa-shopping-cart">
-                 <span class="num-cart-product">0</span>
+                 <!-- <span class="num-cart-product">0</span> -->
              </i>
          </a>
         </div>
     </div>
  </nav>
+ <div class="navbar__toggle" id="mobile-menu">
+  <span class="bar"></span> <span class="bar"></span>
+  <span class="bar"></span>
+</div>
  
  <!-- banner1 -->
  <div class="banner">
@@ -91,34 +103,110 @@
 
     <div class="promotion-layout container">
       <div class="promotion-item">
-        <img src="./maskedwolfmocks/Joystick2.jpg" alt="">
+        <img src="./maskedwolfmocks/Joystick2.jpg" class="promotion-img">
         <div class="promotion-content">
           <h3>JOYSTICKS</h3>
-          <a href="">SHOP NOW</a>
+          <a class="popup-btn">VIEW DETAILS</a>
+        </div>
+        <div class="popup-view">
+          <div class="popup-card">
+            <a><i class="fas fa-times close-btn"></i></a>
+             <div class="product-img">
+               <img src="./maskedwolfmocks/Joystick2.jpg">
+             </div>
+             <div class="detail-info">
+               <h2>JOYSTICKS<br></h2>
+                <p>Operating Voltage: 5V.<br>
+                  Internal Potentiometer value: 10k.<br>
+                  2.54mm pin interface leads.<br>
+                  Dimensions: 1.57 in x 1.02 in x 1.26 in (4.0 cm x 2.6 cm x 3.2 cm)<br>
+                  Operating temperature: 0 to 70 °C.</p>
+                  <a href="#" class="visit-page">View All Collections</a>
+              
+             </div>
+          </div>
         </div>
       </div>
+      
 
       <div class="promotion-item">
-        <img src="./maskedwolfmocks/headphones4.jpg" alt="">
+        <img src="./maskedwolfmocks/headphones4.jpg" class="promotion-img">
         <div class="promotion-content">
           <h3>HEADPHONES</h3>
-          <a href="">SHOP NOW</a>
+          <a class="popup-btn">VIEW DETAILS</a>
+        </div>
+        <div class="popup-view">
+          <div class="popup-card">
+            <a><i class="fas fa-times close-btn"></i></a>
+             <div class="product-img">
+               <img src="./maskedwolfmocks/headphones4.jpg">
+             </div>
+             <div class="detail-info">
+               <h2>HEADPHONES<br></h2>
+                <p>Double-ear standard headset.<br>
+                  High quality dynamic cardioid microphone.<br>
+                  High ambient-noise attenuation headphones.<br>
+                  Microphone: 300Hz – 20kHz frequency response.<br>
+                  Headphone: 40Hz – 20kHz frequency response.
+                  </p>
+                  <a href="#" class="visit-page">View All Collections</a>
+              
+             </div>
+          </div>
         </div>
       </div>
 
       <div class="promotion-item">
-        <img src="./maskedwolfmocks/Laptop1.jpg" alt="">
+        <img src="./maskedwolfmocks/Laptop1.jpg" class="promotion-img">
         <div class="promotion-content">
           <h3>LAPTOPS</h3>
-          <a href="">SHOP NOW</a>
+          <a class="popup-btn">VIEW DETAILS</a>
         </div>
+        <div class="popup-view">
+          <div class="popup-card">
+            <a><i class="fas fa-times close-btn"></i></a>
+             <div class="product-img">
+               <img src="./maskedwolfmocks/Laptop1.jpg">
+             </div>
+             <div class="detail-info">
+               <h2>LAPTOPS<br></h2>
+                <p>Category. Tip.<br>
+                  Screen size. 15.6 is standard, but 12 to 14 inches can be more portable.<br>
+                  RAM & ROM. 4GB RAM or more for multitasking with at least 512GB storage.<br>
+                  Battery. Around 8 hours of battery life support.</p>
+                  <a href="#" class="visit-page">View All Collections</a>
+              
+             </div>
+          </div>
+        </div>
+    
       </div>
 
       <div class="promotion-item">
-        <img src="./maskedwolfmocks/Airpods.jpg" alt="">
+        <img src="./maskedwolfmocks/Airpods.jpg" class="promotion-img">
         <div class="promotion-content">
           <h3>AIRPODS</h3>
-          <a href="">SHOP NOW</a>
+          <a class="popup-btn">VIEW DETAILS</a>
+        </div>
+        <div class="popup-view">
+          <div class="popup-card">
+            <a><i class="fas fa-times close-btn"></i></a>
+             <div class="product-img">
+               <img src="./maskedwolfmocks/Airpods.jpg">
+             </div>
+             <div class="detail-info">
+               <h2>AIRPODS<br></h2>
+                <p>Active Noise Cancellation<br>
+                  Transparency mode<br>
+                  Dual beam-forming microphones<br>
+                  Inward-facing microphone<br>
+                  H1-based System in Package
+                  Sweat and water resistant (IPX4)
+                </p>
+                  <a href="#" class="visit-page">View All Collections</a>
+              
+             </div>
+          </div>
         </div>
       </div>
     </div>
@@ -191,7 +279,7 @@
       <div class="pslider">
         <img src="./maskedwolfmocks/earbuds.jpg" alt="">
         <div class="buy">
-          <a href="#" class="btn">Check Out</a>
+          <a href="./smartgadgets.html" class="btn">Check Out</a>
         </div>
       </div>
       <div class="detail-box">
@@ -206,7 +294,7 @@
       <div class="pslider">
         <img src="./maskedwolfmocks/homepods.jpg" alt="">
         <div class="buy">
-          <a href="#" class="btn">Check Out</a>
+          <a href="./smartgadgets.html" class="btn">Check Out</a>
         </div>
       </div>
       <div class="detail-box">
@@ -221,7 +309,7 @@
       <div class="pslider">
         <img src="./maskedwolfmocks/iphone series.jpg" alt="">
         <div class="buy">
-          <a href="#" class="btn">Check Out</a>
+          <a href="./ios.html" class="btn">Check Out</a>
         </div>
       </div>
       <div class="detail-box">
@@ -236,7 +324,7 @@
       <div class="pslider">
         <img src="./maskedwolfmocks/game console.jpg" alt="">
         <div class="buy">
-          <a href="#" class="btn">Check Out</a>
+          <a href="./smartgadgets.html" class="btn">Check Out</a>
         </div>
       </div>
       <div class="detail-box">
@@ -251,7 +339,7 @@
       <div class="pslider">
         <img src="./maskedwolfmocks/laptops.jpg" alt="">
         <div class="buy">
-          <a href="#" class="btn">Check Out</a>
+          <a href="./windows.html" class="btn">Check Out</a>
         </div>
       </div>
       <div class="detail-box">
@@ -266,7 +354,7 @@
       <div class="pslider">
         <img src="./maskedwolfmocks/full bass headphones.jpg" alt="">
         <div class="buy">
-          <a href="#" class="btn">Check Out</a>
+          <a href="./smartgadgets.html" class="btn">Check Out</a>
         </div>
       </div>
       <div class="detail-box">
@@ -281,7 +369,7 @@
       <div class="pslider">
         <img src="./maskedwolfmocks/smart watchs.jpg" alt="">
         <div class="buy">
-          <a href="#" class="btn">Check Out</a>
+          <a href="./smartgadgets.html" class="btn">Check Out</a>
         </div>
       </div>
       <div class="detail-box">
@@ -302,10 +390,10 @@
       <h2 class="title">Feedback</h2></div>
       <div class="contactForm">
         <h2>Send a Message</h2>
-        <form action="connect.php" method="post">
+        <form action="connect.php" method="POST">
         <div class="formBox">
           <div class="inputBox w50">
-            <input type="text" name="firstName" required>
+            <input type="text" name="firstName" id="text" required>
             <span>First Name</span>
           </div>
           <div class="inputBox w50">
@@ -325,13 +413,73 @@
             <span>Write your message here...</span>
           </div>
           <div class="inputBox w100">
-            <input type="submit" value="Send">
+            <input type="submit" value="Submit" name="submit">
           </div>
         </div>
       </form>
       </div>
   </div>
 </section>
+
+<!-- Services -->
+<section class="services">
+  <!-- service box 1 -->
+  <div class="services-box">
+    <i class="fas fa-shipping-fast"></i>
+    <span>Free Shipping</span>
+    <p>Free Shipping For All Indian Orders</p>
+  </div>
+  <!-- service box 2 -->
+  <div class="services-box">
+    <i class="fas fa-headphones-alt"></i>
+    <span>Support 24/7</span>
+    <p>We Support 24h a day</p>
+  </div>
+  <!-- service box 3 -->
+  <div class="services-box">
+    <i class="fas fa-sync"></i>
+    <span>100% Money Back</span>
+    <p>You have 30 days to Return</p>
+  </div>
+</section>
+
+<!-- Brands -->
+<!-- <section class="section brands">
+  <div class="title">
+    <h2>Brand Partners</h2>
+    <span>Select from the premium product and save plenty money</span>
+  </div>
+
+  <div class="brand-layout container">
+    <div class="glide" id="glide1">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <img src="./maskedwolfmocks/brandlogo/5a36c9d60285b8.3366861215135400540103.png" alt="">
+          </li>
+          <li class="glide__slide">
+            <img src="./maskedwolfmocks/brandlogo/png-transparent-logo-service-wordpress-com-hewlett-packard-angle-company-rectangle.png" alt="">
+          </li>
+          <li class="glide__slide">
+            <img src="./images/brand3.png" alt="">
+          </li>
+          <li class="glide__slide">
+            <img src="./images/brand4.png" alt="">
+          </li>
+          <li class="glide__slide">
+            <img src="./images/brand5.png" alt="">
+          </li>
+          <li class="glide__slide">
+            <img src="./images/brand6.png" alt="">
+          </li>
+          <li class="glide__slide">
+            <img src="./images/brand7.png" alt="">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section> -->
 
 <!-- Footer Section -->
 <footer>
@@ -395,13 +543,18 @@
 <div class="copyrights">
   <p>Copyrights © 2020 Smart Gadgets Vendita.All Rights Reserved. </p>
 </div>
+
+
 <!-- Custom Script -->
 <script src="./js/Jquery.js"></script>
 <script src="./js/index.js"></script>
-<script src="./js/login.js"></script>
 <script src="./js/appleslider.js"></script>
 <script src="./js/fix-nav.js"></script>
 <script src="./js/lightscript.js"></script>
 <script src="./js/lightslider.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/product-details.js"></script>
+<!-- Glidejs -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
 </body>
 </html>

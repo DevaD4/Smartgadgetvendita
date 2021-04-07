@@ -33,6 +33,12 @@ nav {
     border-radius: 70px;
     z-index: 100;
   }
+
+  .logo {
+    width: 4rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
   
   .social-call {
     height: 40px;
@@ -80,13 +86,14 @@ nav {
   }
   .menu {
     position: relative;
-    top: 15px;
+    /* top: 15px; */
     display: flex;
-    transform: translateX(61%);
+    /* transform: translateX(61%); */
+    right: -255px;
   }
   .menu li {
     position: relative;
-    right: 11.3rem;
+    right: 12.6rem;
     margin-left: 40px;
     display: flex;
     text-transform: uppercase;
@@ -110,7 +117,7 @@ nav {
   .right-menu,
   .search-box {
     position: relative;
-    bottom: -10px;
+    /* bottom: -10px; */
   }
   .right-menu a {
     margin: 0 15px;
@@ -155,7 +162,7 @@ nav {
     position: relative;
     color: rgb(255, 255, 255);
   }
-  .num-cart-product {
+  /* .num-cart-product {
     position: absolute;
     top: -17px;
     right: -17px;
@@ -169,21 +176,23 @@ nav {
     justify-content: center;
     align-items: center;
     font-weight: 400;
-  }
+  } */
   
   .fa-user {
     color: rgb(255, 255, 255);
   }
+
+  /* Search box */
   .search-box {
     position: relative;
     height: 60px;
     width: 60px;
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    right: -90px;
+    right: 18px;
   }
   .search-box.active {
     width: 350px;
-    left: 70px;
+    left: 35px;
   }
   
   .search-box input {
@@ -202,7 +211,7 @@ nav {
   }
   .search-box input.active {
     opacity: 1;
-    transform: translateY(6%) translateX(7%);
+    transform: translateY(6%) translateX(-8%);
   }
   
   .search-box .search {
@@ -242,7 +251,7 @@ nav {
     position: absolute;
     top: 50%;
     right: -6px;
-    transform: translateY(-50%);
+    transform: translateY(-45%);
     color: rgb(61, 61, 61);
     font-size: 25px;
     cursor: pointer;
@@ -251,8 +260,9 @@ nav {
   }
   
   .search-box .cancel-btn.active {
+    top: 50%;
     right: -25px;
-    transform: translateY(-45%) translateX(30%) rotate(360deg);
+    transform: translateY(-45%) translateX(-40px) rotate(360deg);
     color: rgb(51, 51, 51);
     visibility: visible;
   }
@@ -419,8 +429,8 @@ section::after{
 }
 .container .card{
     position: relative;
-    width: 450px;
-    height: 500px;
+    width: 400px;
+    height: 490px;
     background: rgba(255,255,255,0.05);
     margin: 20px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.2);

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en" dir="Itr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+
+<!-- css file -->
+<link rel="stylesheet" href="./css/site.css">
+
+ <!-- font awesome icon -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <nav>
+      <div class="social-call">
+        <!--social-links--->
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <!--phone-number------>
+        <div class="phone">
+            <span>Call: +91 63829-76769</span>
+        </div>
+    </div>
+        <div class="nav-responsive">
+            <a href="./index.html"><img src="./products/android/phone-icon3.png" alt="image" class="logo" id="logo"></a>
+            <div class="navbar__toggle" id="mobile-menu">
+              <span class="bar"></span> <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+             <!--menu----------------->
+             <ul class="menu">
+                 <li class="shop"><a href="./ios.html">IOS</a></li>
+                 <li  class="shop"><a href="./android.html" >Android</a></li>
+                 <li class="shop"><a href="./windows.html">Windows</a>
+                     <!--lable---->
+                     <span class="sale-lable">Sale</span>
+                 </li>
+                 <li class="shop"><a href="./smartgadgets.html">Smart Gadgets</a></li>
+                 <li class="shop"><a href="./aboutus.html">About Us</a></li>
+             </ul>
+            <div class="search-box">
+              <input type="text" placeholder="Type to search..."> 
+               <!-- <a href="javascript:void(0);" class="search" > </a>-->
+               <div class="search">
+                  <i class="fas fa-search"></i>
+               </div>
+               <div class="cancel-btn">
+                   <i class="fas fa-times"></i>
+               </div>
+              </div>
+            
+            <div class="access">
+              <a href="./loginpage-main/login.html" class="user">
+                <i class="far fa-user"></i>
+            </a>
+            <a href="#" id="cart"><i class="fa fa-shopping-cart"></i></a>
+           </div> 
+      </div>     
+    </nav>
+
+<!-- main section -->
+<main id="main" >
+   <!-- PRODUCTS -->
+
+  <section class="section products">
+    <div class="products-layout container">
+      <div class="col-1-of-4">
+        <!-- <div>
+          <div class="block-title">
+            <h3>Category</h3>
+          </div>
+
+          <ul class="block-content">
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>Shoes</span>
+                <small>(10)</small>
+              </label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>Bags</span>
+                <small>(7)</small>
+              </label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span> Accessories</span>
+                <small>(3)</small>
+              </label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>Clothings</span>
+                <small>(3)</small>
+              </label>
+            </li>
+          </ul>
+        </div> -->
+
+        <div>
+          <div class="block-title">
+            <h3>Brands</h3>
+          </div>
+
+          <ul class="block-content">
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>Dell</span>
+                <small>(3)</small>
+              </label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>HP</span>
+                <small>(3)</small>
+              </label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>Lenovo</span>
+                <small>(3)</small>
+              </label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>Mac Book</span>
+                <small>(2)</small>
+              </label>
+            </li>
+
+            <!-- <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>Samsung</span>
+                <small>(2)</small>
+              </label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="" id="">
+              <label for="">
+                <span>Xiaomi</span>
+                <small>(3)</small>
+              </label>
+            </li> -->
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-3-of-4">
+        <form action="">
+          <div class="item">
+            <label for="sort-by">Sort By</label>
+            <select name="sort-by" id="sort-by">
+              <option value="title" selected="selected">Name</option>
+              <option value="number">Price</option>
+              <option value="search_api_relevance">Relevance</option>
+              <option value="created">Newness</option>
+            </select>
+          </div>
+          <div class="item">
+            <label for="order-by">Order</label>
+            <select name="order-by" id="sort-by">
+              <option value="ASC" selected="selected">ASC</option>
+              <option value="DESC">DESC</option>
+            </select>
+          </div>
+          <a href="">Apply</a>
+        </form>
+
+
+<!-- all categories -->
+<section class="categories">
+    <div class="title-container">
+        <h1 id="title">Top Brand Laptops</h1>
+        <!-- <button type="button" id="item-btn">View All</button> -->
+    </div>
+    <div class="card">
+        <div class="item-container" id="0">
+            <div class="card-item">
+                <img src="./products/lapsize/Dell G3.png" alt="img" id="card-img">
+                <p id="item-name">Dell G3</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : ₹ 80,000</h3>               
+        </div>
+
+        <div class="item-container" id="1">
+            <div class="card-item" >
+                <img src="./products/lapsize/dell inspiron.png" alt="img" id="card-img">
+                <p id="item-name">Dell Insipiron</p>              
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : ₹ 60,000</h3>
+        </div>
+
+        <div class="item-container" id="2">
+            <div class="card-item" >
+                <img src="./products/lapsize/Dell Vostro.png" alt="img" id="card-img">
+                <p id="item-name">Dell Vostro</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : ₹ 66,000</h3>                
+        </div>
+
+        <div class="item-container" id="3">
+            <div class="card-item">
+                <img src="./products/lapsize/HP 15 11th gen.png" alt="img" id="card-img">
+                <p id="item-name">HP 15 (11th Generation)</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : ₹ 78,500</h3>            
+        </div>
+    </div>
+</section>
+
+<!-- Redmi phones -->
+<section class="categories">
+    <div class="title-container">
+        <!-- <h1 id="title">Xiaomi Phones</h1> -->
+        <!-- <button type="button" id="item-btn">View All</button> -->
+    </div>
+    <div class="card">
+
+        <div class="item-container" id="4">
+            <div class="card-item">
+                <img src="./products/lapsize/HP Notebook.png" alt="img" id="card-img">
+                <p id="item-name">HP Notebook</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : ₹ 70,000</h3>            
+        </div>
+
+        <div class="item-container"  id="5">
+            <div class="card-item">
+                <img src="./products/lapsize/HP-Pavilion 11th gen.png" alt="img" id="card-img">
+                <p id="item-name">HP-Pavillion (11th Generation)</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : ₹ 85,000</h3>            
+        </div>
+
+        <div class="item-container"  id="6">
+
+            <div class="card-item">
+                <img src="./products/lapsize/Lenovo ideapad flex 5.png" alt="img" id="card-img">
+                <p id="item-name">Lenovo Ideapad Flex 5</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : ₹ 46,000</h3>            
+        </div>
+
+        <div class="item-container" id="7">
+            <div class="card-item">
+                <img src="./products/lapsize/Lenovo ideapad s145.png" alt="img" id="card-img">
+                <p id="item-name">Lenovo Ideapad s145</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : ₹ 55,000</h3>            
+        </div>
+    </div>
+</section>
+<!-- end of Redmi phones -->
+
+<!-- Realme Phones -->
+<section class="categories">
+    <div class="title-container">
+        <!-- <h1 id="title">Realme Phones</h1> -->
+        <!-- <button type="button" id="item-btn">View All</button> -->
+    </div>
+    <div class="card">
+
+        <div class="item-container" id="8">
+            <div class="card-item">
+                <img src="./products/lapsize/Lenovo Yoga Slim 7.png" alt="img" id="card-img">
+                <p id="item-name">Lenovo Yoga Slim 7</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : ₹ 57000</h3>            
+        </div>
+
+        <div class="item-container" id="9">
+
+            <div class="card-item">
+                <img src="./products/lapsize/Mac book  pro.png" alt="img" id="card-img">
+                <p id="item-name">Mac-Book Pro</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : ₹ 1,10,000</h3>            
+        </div>
+
+        <div class="item-container" id="10">
+
+            <div class="card-item">
+                <img src="./products/lapsize/Mac book Air.png" alt="img" id="card-img">
+                <p id="item-name">Mac-Book Air</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : ₹ 1,43,000</h3>            
+        </div>
+
+        <!-- <div class="item-container" id="11">
+
+            <div class="card-item">
+                <img src="./products/lapsize/" alt="img" id="card-img">
+                <p id="item-name">Realme C15 (Power Silver, 4GB RAM, 64GB Storage)</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : ₹ 35000</h3>            
+        </div> -->
+    </div>
+</section>
+<!-- end of realme phones -->
+
+<!-- Oppo Phones -->
+<!-- <section class="categories">
+    <div class="title-container">
+        <h1 id="title">Oppo Phones</h1>
+        <button type="button" id="item-btn">View All</button>
+    </div>
+    <div class="card">
+
+        <div class="item-container" id="12">
+            <div class="card-item">
+                <img src="./products/android/oppoA31.jpg" alt="img" id="card-img">
+                <p id="item-name">Oppo A31 (Fantasy White, 6GB RAM, 128GB Storage)</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : ₹ 28000</h3>            
+        </div>
+
+        <div class="item-container" id="13">
+            <div class="card-item">
+                <img src="./products/android/oppA5s.jpg" alt="img" id="card-img">
+                <p id="item-name">OPPO A5S (Black, 3GB RAM, 32GB Storage)</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : ₹ 19000</h3>            
+        </div>
+
+        <div class="item-container" id="14">
+            <div class="card-item">
+                <img src="./products/android/oppoF17.jpg" alt="img" id="card-img">
+                <p id="item-name">OPPO F17 Pro (Matte Black, 8GB RAM, 128GB Storage)</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : ₹ 30000</h3>            
+        </div>
+
+        <div class="item-container" id="15">
+            <div class="card-item">
+                <img src="./products/android/oppoA15.jpg" alt="img" id="card-img">
+                <p id="item-name">OPPO A15 (Dynamic Black, 3GB RAM, 32GB Storage)</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : ₹ 27050</h3>            
+        </div>
+    </div>
+</section> -->
+<!-- end of oppo phones -->
+
+<!-- samsung Phones -->
+<!-- <section class="categories">
+    <div class="title-container">
+        <h1 id="title">Samsung Phones</h1>
+        <button type="button" id="item-btn">View All</button>
+    </div>
+    <div class="card">
+
+        <div class="item-container" id="16">
+
+            <div class="card-item">
+                <img src="./products/android/samgalaxyM01.jpg" alt="img" id="card-img">
+                <p id="item-name">Samsung Galaxy M01 (Blue, 3GB RAM, 32GB Storage)</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : ₹ 23100</h3>            
+        </div>
+
+        <div class="item-container" id="17">
+            <div class="card-item">
+                <img src="./products/android/samGalaxyM21.jpg" alt="img" id="card-img">
+                <p id="item-name">Samsung Galaxy M21 (Raven Black, 4GB RAM, 64GB Storage)</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : ₹ 24000</h3>            
+        </div>
+
+        <div class="item-container" id="18">
+            <div class="card-item">
+                <img src="./products/android/samsGalaxyNote20.jpg" alt="img" id="card-img">
+                <p id="item-name">Samsung Galaxy Note 20</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : ₹ 22900</h3>            
+        </div>
+
+        <div class="item-container" id="19">
+            <div class="card-item">
+                <img src="./products/android/samGalaxys20+.jpg" alt="img" id="card-img">
+                <p id="item-name">Samsung Galaxy S20 +</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : ₹ 35000</h3>            
+        </div>
+    </div>
+</section> -->
+<!-- end of samsung phones -->
+
+</main>
+<!-- end of main -->
+
+
+<!-- details page section -->
+<div id="details-page">
+    <div class="details">
+        <div class="items-detail">
+            <div class="image-container">
+                <img src="./products/lapsize/Dell G3.png" alt="" id="details-img">
+            </div>
+            <div class="details-card">
+                <h2 id="detail-title">Dell G3</h2>
+                <h4 id="detail-price">Price : ₹ 80,000</h4>
+                <p id="you-save">You save : (₹ 14,000)</p>
+                <p id="delievery"><strong>Delivery : </strong> In 3 - 4 days</p>
+                <p id="spec"><strong>Specification :</strong>
+
+                    <ul>
+                        <li>13MP AI triple main camera + 2MP bokeh (depth of field) camera + 2MP macro camera with photo, video, professional mode panorama, portrait, time-lapse etc. | 16MP front punch hole camera</li>
+
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </li>
+
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil maxime reiciendis laborum! Velit odit molestias architecto doloremque est sapiente. </li>
+                    </ul>
+                </p>
+                <button id="carts">Add to Cart</button>
+                <button id="buy">Back</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of page detail -->
+
+
+<!-- cart list section -->
+<div id="cart-container">
+    <p id="cart-title">Your <strong>Cart</strong></p id="cart-title">
+    <div id="empty-cart">
+        <h1>Your Cart is Empty...</h1>
+    </div>
+
+    <div id="cart-with-items">
+        <div class="cart-column">
+            <h3>Product</h3>
+            <h3>Product Name</h3>
+            <h3>Total </h3>
+            <h3>Quantity</h3>
+            <h3>Remove</h3>
+        </div>
+        <div id="item-body">
+        </div>
+        <div id="total">
+            <h3 id="total-items"></h3>
+            <h2 id="total-amount"></h2>
+            <h3 id="you-saved"></h3>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer>
+  <div class="sec containeer">
+      <div class="aboutus">
+          <h2>About Us</h2>
+                <p>Gadgets.in, is one of India's best technology and digital lifestyle shopping portal and
+                  Providing a simulating online shopping experience, it offers the latest range of gadgets and
+                  electronic products at most competitive prices. Gadgets.in carries over 7,000 products and
+                  the list is constantly being revised. We focus on bringing you the most unique gadgets in
+                  India.
+               </p>
+               <div class="payments">
+                  <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+                  <i class="fa fa-cc-visa" aria-hidden="true"></i>
+                  <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+                  <i class="fa fa-cc-amex" aria-hidden="true"></i>
+                  <i class="fa fa-google-wallet" aria-hidden="true"></i>
+              </div>
+              <p><span><i class="fa fa-lock" aria-hidden="true"></i></span>Secure Online Payment</p>
+          </div>
+      <div class="sec quicklinks">
+          <h2>Quick Links</h2>
+          <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+      </div>
+      <div class="sec contact">
+          <h2>Contact Info</h2>
+          <ul class="info">
+              <li>
+                  <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                  <span>srm college <br>
+                        SRM nagar,<br>Potheri<br>
+                        Kattankalathur.
+                  </span>
+              </li>
+              <li>
+                  <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                  <p><a href="tel:+91 9988776655">+91 9988776655</a></p>
+              </li>
+              <div class="femail">
+
+              <li>
+                  <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                  <p><a href="mailto:ac8454@srmist.edu.in">smartgasgetsvendita@gmail.com</a></p>                   
+               </li></div>
+          </ul>
+          <ul class="sci">
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+               </ul>
+      </div>
+  </div>
+</footer>
+<div class="copyrights">
+  <p>Copyrights © 2020 Smart Gadgets Vendita.All Rights Reserved. </p>
+</div>
+<!-- Custom Scripts -->
+<script src="./js/Jquery.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/fix-nav products.js"></script>
+<script src="./js/windows.js"></script>
+<!-- Using FontAwesome for Icons -->
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+</body>
+</html>
