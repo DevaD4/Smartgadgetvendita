@@ -238,3 +238,11 @@ function removeFromCart(itemId){
         document.getElementById('empty-cart').style.display= "block";
     }
 }
+
+// toggle-menu
+$(document).ready(function(){
+    $('.toggle').click(function(){
+        $('.toggle').toggleClass('active')
+        $('.nav-responsive').toggleClass('active')
+    })
+})

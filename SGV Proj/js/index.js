@@ -15,3 +15,11 @@ const searchInput = document.querySelector("input");
         cancelBtn.classList.remove("active");
   
     }
+
+// toggle-menu
+$(document).ready(function(){
+    $('.toggle').click(function(){
+        $('.toggle').toggleClass('active')
+        $('.navigation').toggleClass('active')
+    })
+})
